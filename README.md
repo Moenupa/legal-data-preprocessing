@@ -10,4 +10,4 @@ uv sync
 uv run python -m src.preprocessing
 ```
 
-for more usage examples, refer to `src/preprocessing.py` docstring. 
+for more usage examples, refer to [src/preprocessing.py](src/preprocessing.py) docstring. 
