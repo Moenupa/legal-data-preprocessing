@@ -41,12 +41,6 @@ def process(province: str, filters: list[str] = None) -> pd.DataFrame:
             beijing_file = read_file("res/Beijing.xlsx")
             beijing_file["有期徒刑"] = beijing_file["裁判结果"].apply(extract_months)
             out = beijing_file
-            out.to_json(
-                "out/beijing_processed.jsonl",
-                orient="records",
-                force_ascii=False,
-                lines=True,
-            )
         case _:
             raise NotImplementedError(f"{province}: unsupported province")
 
